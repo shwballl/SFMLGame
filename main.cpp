@@ -42,12 +42,12 @@ int main(){
     sf::RenderWindow window(sf::VideoMode(1280, 720), "SFML Game");
 
 
-    Player player("C:/prog/cosm.png");
+    Player player("C:/prog/SFMLGame/res/cosm.png");
     player.setPosition(0, 600);
 
 
     sf::Font font;
-    font.loadFromFile("C:/prog/TiltWarp-Regular.ttf");
+    font.loadFromFile("C:/prog/SFMLGame/res/TiltWarp-Regular.ttf");
     sf::Text text;
     text.setString("Game Over!");
     text.setCharacterSize(32);
@@ -66,7 +66,7 @@ int main(){
     vect.reserve(10);
     for (size_t i = 0; i < 10; i++)
     {
-        vect.push_back(new Entity("C:/prog/dirt.png"));
+        vect.push_back(new Entity("C:/prog/SFMLGame/res/dirt.png"));
     }
     vect[0]->setPosition(0, 655);
     int j = 1;
@@ -85,7 +85,7 @@ int main(){
     enemies.reserve(20);
     for (size_t i = 0; i < 20; i++)
     {
-        enemies.push_back(new Entity("C:/prog/asteroid.png"));
+        enemies.push_back(new Entity("C:/prog/SFMLGame/res/asteroid.png"));
         setRandomPos(enemies[i]);
         
     }
